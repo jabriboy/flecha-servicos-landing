@@ -22,8 +22,8 @@ const Header: React.FC = () => {
 
   const menuItems = [
     { label: 'Início', href: '#home' },
-    { label: 'Serviços', href: '#services' },
     { label: 'Sobre', href: '#about' },
+    { label: 'Serviços', href: '#services' },
     { label: 'Contato', href: '#contact' }
   ];
 
