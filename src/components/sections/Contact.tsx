@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Instagram, Send } from 'lucide-react';
+// @ts-ignore
 import { Button } from '../ui/button';
 import { contactInfo } from '../../data/company';
 
@@ -25,12 +26,11 @@ const Contact: React.FC = () => {
     
     // Create WhatsApp message
     const message = `Olá! Gostaria de solicitar um orçamento:
-    
-Nome: ${formData.name}
-Email: ${formData.email}
-Telefone: ${formData.phone}
-Serviço: ${formData.service}
-Mensagem: ${formData.message}`;
+      Nome: ${formData.name}
+      Email: ${formData.email}
+      Telefone: ${formData.phone}
+      Serviço: ${formData.service}
+      Mensagem: ${formData.message}`;
     
     const whatsappUrl = `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -50,7 +50,7 @@ Mensagem: ${formData.message}`;
 
   return (
     <section id="contact" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26] px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

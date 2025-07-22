@@ -40,7 +40,7 @@ const Header: React.FC = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <div className="mx-0 py-4">
-        <div className="flex items-center justify-between mx-12 md:mx-8">
+        <div className="flex items-center justify-between mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26]">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img src={logo} alt="logo" className={`h-10 bg-cover transition-all duration-500 ${!isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg px-2 rounded-2xl' : ' px-2 rounded-2xl bg-transparent'}`}/>

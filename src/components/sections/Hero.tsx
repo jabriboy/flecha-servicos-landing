@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-20 mx-auto px-4 py-20">
-        <div className="mx-auto text-center text-white">
+        <div className="text-center text-white mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26]">
           {/* Main Heading */}
           <h1 className="text-4xl [@media(min-width:960px)]:text-5xl font-bold mb-2 leading-tight">
             Eletricista Confiável e
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
             <Button 
               onClick={handleWhatsAppClick}
-              className="cursor-pointer gradient-bg text-black font-bold  rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg items-center justify-center px-6"
+              className="cursor-pointer gradient-bg text-foreground font-bold  rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg items-center justify-center px-6"
             >
               <img src={wpp} alt="Whatsapp logo" className='w-5 mt-0.5'/>
               Solicitar Orçamento

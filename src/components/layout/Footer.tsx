@@ -1,6 +1,8 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 import { contactInfo, companyInfo } from '../../data/company';
+// @ts-ignore
+import logo from '../../assets/logo.png'
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -28,14 +30,12 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white">
 
       {/* Main Footer Content */}
-      <div className="mx-12 py-16">
+      <div className="mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26] py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-full">
           {/* Company Info */}
           <div className="lg:col-span-2 max-w-fit">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">F</span>
-              </div>
+              <img src={logo} alt="Logo" className='h-10'/>
               <span className="text-xl font-bold">Flecha Serviços</span>
             </div>
             
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 py-6">
+        <div className="mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26] px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © {currentYear} Flecha Serviços. Todos os direitos reservados.

@@ -26,7 +26,7 @@ const Gallery: React.FC = () => {
 
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26] px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -62,28 +62,6 @@ const Gallery: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Statistics Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-3xl font-bold text-gray-900 mb-12">
-            Somos Profissionais em Todos os Nossos Negócios!
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-yellow-500 mb-2">2,318</div>
-              <div className="text-gray-600 text-lg">Projetos Concluídos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-yellow-500 mb-2">6,154</div>
-              <div className="text-gray-600 text-lg">Clientes Satisfeitos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-yellow-500 mb-2">9,784</div>
-              <div className="text-gray-600 text-lg">Horas de Trabalho</div>
-            </div>
-          </div>
         </div>
 
         {/* Partner Logos */}

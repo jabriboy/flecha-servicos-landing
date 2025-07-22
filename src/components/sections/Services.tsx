@@ -22,7 +22,7 @@ const Services: React.FC = () => {
 
   return (
     <section id="services" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="px-4 mx-20 [@media(max-width:900px)]:mx-12 [@media(min-width:1500px):mx-26]">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -58,10 +58,10 @@ const Services: React.FC = () => {
                 <Button 
                   onClick={scrollToContact}
                   variant="ghost" 
-                  className="text-yellow-600 hover:text-yellow-700 font-semibold p-0 h-auto group-hover:translate-x-2 transition-transform duration-300"
+                  className="gradient-text font-semibold h-auto transform-content hover:scale-104 hover:border-1 border-orange-300 p-1 duration-300 cursor-pointer [@media(max-width:900px)]:border-1"
                 >
                   Saiba mais
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 ml-0 text-orange-300" />
                 </Button>
               </div>
             );
@@ -73,8 +73,8 @@ const Services: React.FC = () => {
           {/* Contrato */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                <Settings className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 gradient-secondary-bg rounded-lg flex items-center justify-center mr-4">
+                <Settings className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Contrato</h3>
             </div>
@@ -86,8 +86,8 @@ const Services: React.FC = () => {
           {/* Empreita */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                <Wrench className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 gradient-secondary-bg rounded-lg flex items-center justify-center mr-4">
+                <Wrench className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Empreita</h3>
             </div>
