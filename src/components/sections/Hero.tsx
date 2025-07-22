@@ -3,6 +3,8 @@ import { ArrowRight } from 'lucide-react';
 // @ts-ignore
 import wpp from '../../assets/whatsapp.png'
 // @ts-ignore
+import heroImg from '../../assets/hero-bg.jpg'
+// @ts-ignore
 import { Button } from '../ui/button';
 import { companyInfo, contactInfo } from '../../data/company';
 
@@ -24,7 +26,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800/80 to-blue-800/90 z-10"></div>
         <img 
-          src="/src/assets/hero-bg.jpg" 
+          src={heroImg} 
           alt="Eletricista trabalhando" 
           className="w-full h-full object-cover"
         />

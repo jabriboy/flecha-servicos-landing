@@ -1,24 +1,33 @@
 import React from 'react';
+// @ts-ignore
+import gallery1 from "../../assets/gallery-1.jpg"
+// @ts-ignore
+import gallery2 from "../../assets/gallery-2.jpg"
+// @ts-ignore
+import gallery3 from "../../assets/gallery-3.jpg"
+// @ts-ignore
+import gallery4 from "../../assets/gallery-4.jpg"
+
 
 const Gallery: React.FC = () => {
   const galleryImages = [
     {
-      src: '/src/assets/gallery-1.jpg',
+      src: gallery1,
       alt: 'Instalação elétrica predial',
       title: 'Instalação Elétrica Predial'
     },
     {
-      src: '/src/assets/gallery-2.jpg',
+      src: gallery2,
       alt: 'Manutenção de quadro elétrico',
       title: 'Manutenção de Quadro Elétrico'
     },
     {
-      src: '/src/assets/gallery-3.jpg',
+      src: gallery3,
       alt: 'Sistema de energia solar',
       title: 'Sistema de Energia Solar'
     },
     {
-      src: '/src/assets/gallery-4.jpg',
+      src: gallery4,
       alt: 'Automação residencial',
       title: 'Automação Residencial'
     }

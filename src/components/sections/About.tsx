@@ -1,6 +1,8 @@
 import React from 'react';
 import { Target, Eye, Heart, CheckCircle } from 'lucide-react';
 import { companyInfo } from '../../data/company';
+// @ts-ignore
+import img from '../../assets/about-image.jpg'
 
 const About: React.FC = () => {
   return (
@@ -42,7 +44,7 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/src/assets/about-image.jpg" 
+                src={img}
                 alt="Profissional trabalhando" 
                 className="w-full h-96 object-cover"
               />
